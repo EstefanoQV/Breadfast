@@ -16,7 +16,7 @@ Breadfast es una aplicación móvil diseñada para los clientes de una panaderí
 
 Este proyecto está en su etapa inicial y no es completamente funcional. Los botones y elementos de la interfaz están presentes y operativos en términos de navegación, pero no realizan validaciones de datos ni gestionan errores. La aplicación está diseñada para mostrar una vista preliminar del diseño y la estructura, y no se espera que funcione completamente en su estado actual.
 
-- **Desarrollo**: Este proyecto fue desarrollado por mí, Estefano Quito Villanueva, como parte de un trabajo universitario. La implementación actual refleja el estado alcanzado al momento de presentar el proyecto(1 semana).
+- **Desarrollo**: Este proyecto fue desarrollado por mí, Estefano Quito Villanueva, como parte de un trabajo universitario. La implementación actual refleja el estado alcanzado al momento de presentar el proyecto (1 semana).
 
 ## Capturas de Pantalla :camera:
 
