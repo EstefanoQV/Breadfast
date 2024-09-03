@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.ActivityRegisterClient">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sofia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Registrarse"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCliente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_button_background_shadow"
+            android:fontFamily="@font/sorasemi"
+            android:text="Cliente"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonVendedor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_button_background_shadow"
+            android:fontFamily="@font/sorasemi"
+            android:text="Vendedor"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/buttonLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/sorasemi"/>
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Ingrese su nombre"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:fontFamily="@font/sora"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellidos"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/sorasemi"/>
+
+        <EditText
+            android:id="@+id/editTextApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Ingrese sus apellidos"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:fontFamily="@font/sora"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/sorasemi"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Ingrese su correo"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:fontFamily="@font/sora"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/sorasemi"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Ingrese su contraseña"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:fontFamily="@font/sora" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Contraseña"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/sorasemi"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Confirme su contraseña"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:fontFamily="@font/sora" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonIniciar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sorasemi"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+

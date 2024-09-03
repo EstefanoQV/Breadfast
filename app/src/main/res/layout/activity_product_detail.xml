@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Back Arrow and Title -->
+    <LinearLayout
+        android:id="@+id/backArrowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cheesecakec"
+        android:scaleType="centerCrop"/>
+
+    <!-- Product Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CHESSECAKE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Product Subtitle -->
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chocolate"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"/>
+
+    <!-- Product Description -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Descripción"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewDescriptionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="blablablablablablablablabla."
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Product Price and Buy Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewPriceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/ 50"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Buy Button -->
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprar"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

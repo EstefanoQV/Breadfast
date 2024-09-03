@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/BreadFast"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bread_basket" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sofia"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="BreadFast"
+        android:textColor="#FBDBCB"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solwayb"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Tu panadería de confianza, ahora en tu móvil"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sora"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Sabor y tradición, en una app sin igual"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sorasemi"
+        android:layout_above="@+id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Iniciar Sesión"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sorasemi"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.ActivityHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footerLayout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/clienteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clienteTextView"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/sorasemi"
+                android:text="Estefano Quito"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/myOrderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Mis Pedidos"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button_background"
+                android:textColor="@android:color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/userNameTextView"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Buscar producto"
+                android:paddingStart="10dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_search"
+                android:drawableLeft="@drawable/lupa"
+                android:drawablePadding="13dp"
+                android:fontFamily="@font/sora"/>
+
+            <FrameLayout
+                android:id="@+id/promoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchEditText"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/promoImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/croissant"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_image_background" />
+
+                <TextView
+                    android:id="@+id/promoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Acumula puntos por tus compras"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/solwayb"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20sp"/>
+
+                <Button
+                    android:id="@+id/myPointsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Mis Puntos"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_button_background"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"/>
+
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/categoryScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promoLayout"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/categoryButtonLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/category1Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tortas"
+                        android:fontFamily="@font/sorasemi"
+                        android:textAllCaps="false"
+                        android:textSize="17dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:id="@+id/category2Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Panes"
+                        android:fontFamily="@font/sorasemi"
+                        android:textSize="17dp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:id="@+id/category3Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bocaditos"
+                        android:fontFamily="@font/sorasemi"
+                        android:textSize="17dp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:id="@+id/category4Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Piononos"
+                        android:fontFamily="@font/sorasemi"
+                        android:textSize="17dp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:id="@+id/category5Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Especiales"
+                        android:fontFamily="@font/sorasemi"
+                        android:textSize="17dp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="16dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categoryScrollView"
+                android:layout_marginTop="16dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/section1ImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/section2ImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/croisant" />
+
+        <ImageButton
+            android:id="@+id/section3ImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gift" />
+
+        <ImageButton
+            android:id="@+id/section4ImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

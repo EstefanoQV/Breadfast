@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cheesecakec"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewProduct"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:fontFamily="@font/sorasemi"
+            android:textColor="@android:color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:fontFamily="@font/sora"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:fontFamily="@font/sorasemi"
+            android:textColor="@android:color/black"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
